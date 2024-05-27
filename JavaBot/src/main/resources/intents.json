@@ -1,0 +1,609 @@
+[
+  {
+    "tag": "greeting",
+    "patterns": [
+      "Hi",
+      "hi",
+      "Hello"
+    ],
+    "response": [
+      "Hello!"
+    ]
+  },
+  {
+    "tag": "day",
+    "patterns": [
+      "Good day",
+      "??? ???"
+    ],
+    "response": [
+      "Good to see you again!"
+    ]
+  },
+  {
+    "tag": "hey",
+    "patterns": [
+
+      "What's up",
+      "how are ya",
+      "hey",
+      "Hey",
+      "whatsup",
+      "??? ??? ??"
+    ],
+    "response": [
+      "Hi there, how can I help?"
+    ]
+  },
+  {
+    "tag": "goodbye",
+    "patterns": [
+      "see you",
+      "bye",
+      "bye bye",
+      "See you later",
+      "Good bye"
+    ],
+    "response": [
+      "Sad to see you go :("
+    ]
+  },
+  {
+    "tag": "goodbye",
+    "patterns": [
+      "I am Leaving",
+      "talk to you later",
+      "i got to go"
+    ],
+    "response": [
+      "Come back soon"
+    ]
+  },
+  {
+    "tag": "creator",
+    "patterns": [
+      "what is the name of your developers",
+      "what is the name of your creators",
+      "what is the name of the developers",
+      "what is the name of the creators",
+      "who created you",
+      "your developers",
+      "your creators",
+      "who are your developers",
+      "developers",
+      "you are made by",
+      "you are made by whom",
+      "who created you",
+      "who create you",
+      "creators",
+      "who made you",
+      "who designed you"
+    ],
+    "response": [
+      "Kumarasanthosh"
+    ]
+  },
+  {
+    "tag": "name",
+    "patterns": [
+      "name",
+      "your name",
+      "do you have a name",
+      "what are you called",
+      "what is your name",
+      "what should I call you",
+      "whats your name?",
+      "what are you",
+      "who are you",
+      "who is this",
+      "what am i chatting to",
+      "who am i taking to",
+      "what are you"
+    ],
+    "response": [
+      "You can call me JAVA Bot."
+    ]
+  },
+  {
+    "tag": "Arrays",
+    "patterns": [
+      "Arrays",
+      "What is Array?",
+      "What is Array",
+      "Defenition of Array"
+    ],
+    "response": [
+      "Arrays are used to store multiple values in single variable, instead of declaring separate variables for each value. To declare an array, define the variable type with square brackets: String[] cars;"
+    ]
+  },
+  {
+    "tag": "Advantages of Array",
+    "patterns": [
+      "Advantages of Array"
+    ],
+    "response": [
+      "Code Optimization: It makes the code optimized, we can retrieve or sort the data efficiently. Random access: We can get any data located at an index position."
+    ]
+  },
+  {
+    "tag": "Disadvantages of Array",
+    "patterns": [
+      "Disadvantages of Array"
+    ],
+    "response": [
+      "Size Limit: We can store only the fixed size of elements in the array. It doesn't grow its size at runtime. To solve this problem, collection framework is used in Java which grows automatically."
+    ]
+  },
+  {
+    "tag": "Types of Array",
+    "patterns": [
+      "Types of Array"
+    ],
+    "response": [
+      "Single Dimensional Array and Multidimensional Array"
+    ]
+  },
+  {
+    "tag": "single dimension array",
+    "patterns": [
+      "single dimension array",
+      "What is single dimension array?"
+    ],
+    "response": [
+      "A single dimensional array in Java is an array that holds a sequence of elements, all of the same type, accessed through an index. For instance, if we create an array to store integer data type values, all elements of the array must be integers, and they are accessed using their index positions."
+    ]
+  },
+  {
+    "tag": "Multidimension Array",
+    "patterns": [
+      "Multidimension Array",
+      "What is Multidimension Array?"
+    ],
+    "response": [
+      "Multidimensional arrays are arrays of arrays with each element of the array holding the reference of other arrays. These are also known as Jagged Arrays. A multidimensional array is created by appending one set of square brackets ([]) per dimension."
+    ]
+  },
+  {
+    "tag": "Exception Handling",
+    "patterns": [
+      "Exception Handling",
+      "What is Exception Handling?"
+    ],
+    "response": [
+      "The Exception Handling in Java is one of the powerful mechanisms to handle the runtime errors so that the normal flow of the application can be maintained. To handle runtime errors such as ClassNotFoundException, IOException, SQLException, RemoteException, etc."
+    ]
+  },
+  {
+    "tag": "Advantages of Exception Handling",
+    "patterns": [
+      "Advantages of Exception Handling"
+    ],
+    "response": [
+      "To maintain the normal flow of the application. An exception normally disrupts the normal flow of the application; that is why we need to handle exceptions."
+    ]
+  },
+  {
+    "tag": "Types Of Exception Handling",
+    "patterns": [
+      "Types Of Exception Handling"
+    ],
+    "response": [
+      "Checked Exception, Unchecked Exception and Error"
+    ]
+  },
+  {
+    "tag": "checked Exception",
+    "patterns": [
+      "checked Exception",
+      "Whate is checked Exception?"
+    ],
+    "response": [
+      "The classes that directly inherit the Throwable class except RuntimeException and Error are known as checked exceptions. For example, IOException, SQLException, etc. Checked exceptions are checked at compile-time"
+    ]
+  },
+  {
+    "tag": "Unchecked Exception",
+    "patterns": [
+      "Unchecked Exception",
+      "What is Unchecked Exception?"
+    ],
+    "response": [
+      "The classes that inherit the RuntimeException are known as unchecked exceptions. For example, ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException, etc. Unchecked exceptions are not checked at compile-time, but they are checked at runtime."
+    ]
+  },
+  {
+    "tag": "error",
+    "patterns": [
+      "error",
+      "What is error?"
+    ],
+    "response": [
+      "Error is irrecoverable. Some examples of errors are OutOfMemoryError, VirtualMachineError, AssertionError, etc."
+    ]
+  },
+  {
+    "tag": "java Exception",
+    "patterns": [
+      "java Exception",
+      "What are java Exception key words?"
+    ],
+    "response": [
+      "try, catch, finally, throw, throws"
+    ]
+  },
+  {
+    "tag": "Wrapper Class",
+    "patterns": [
+      "Wrapper Class",
+      "What is wrapper class?"
+    ],
+    "response": [
+      "The wrapper class in Java provides the mechanism to convert primitive into object and object into primitive. Since J2SE 5.0, autoboxing and unboxing feature convert primitives into objects and objects into primitives automatically. The automatic conversion of primitive into an object is known as autoboxing and vice-versa unboxing."
+    ]
+  },
+  {
+    "tag": "Uses of wrapper class",
+    "patterns": [
+      "Uses of wrapper class"
+    ],
+    "response": [
+      "Java is an object-oriented programming language, so we need to deal with objects many times like in Collections, Serialization, Synchronization, etc. Need to use the wrapper classes. Change the value in Method: Java supports only call by value. So, if we pass a primitive value, it will not change the original value. But, if we convert the primitive value into an object, it will change the original value. Serialization: We need to convert the objects into streams to perform the serialization. If we have a primitive value, we can convert it into objects through the wrapper classes. Synchronization: Java synchronization works with objects in Multithreading. java.util package: The java.util package provides the utility classes to deal with objects. Collection Framework: Java collection framework works with objects only. All classes of the collection framework (ArrayList, LinkedList, Vector, HashSet, LinkedHashSet, TreeSet, PriorityQueue, ArrayDeque, etc.) deal with objects only."
+    ]
+  },
+  {
+    "tag": "Wrapper Class",
+    "patterns": [
+      "List of Wrapper classes"
+    ],
+    "response": [
+      "<br><br>Primitive Type    Wrapper class <br>  boolean   Boolean <br> char  Character <br> byte  Byte <br> short  Short <br> int  Integer <br> long   Long <br> float   Float <br> double   Double"
+    ]
+  },
+  {
+    "tag": "Wrapper Class",
+    "patterns": [
+      "What is Autoboxing?"
+    ],
+    "response": [
+      "The automatic conversion of primitive data type into its corresponding wrapper class is known as autoboxing, for example, byte to Byte, char to Character, int to Integer, long to Long, float to Float, boolean to Boolean, double to Double, and short to Short."
+    ]
+  },
+  {
+    "tag": "Wrapper Class",
+    "patterns": [
+      "What is Unboxing?"
+    ],
+    "response": [
+      "The automatic conversion of wrapper type into its corresponding primitive type is known as unboxing. It is the reverse process of autoboxing. Since Java 5,no need to use the intValue() method of wrapper classes to convert the wrapper type into primitives."
+    ]
+  },
+  {
+    "tag": "Operators",
+    "patterns": [
+      "What is Operators?"
+    ],
+    "response": [
+      "Operator in Java is a symbol that is used to perform operations. For example: +, -, *, / etc."
+    ]
+  },
+  {
+    "tag": "Operators",
+    "patterns": [
+      "Types of Operators"
+    ],
+    "response": [
+      "Unary Operator, Arithmetic Operator, Shift Operator, Relational Operator, Bitwise Operator, Logical Operator, Ternary Operator and Assignment Operator."
+    ]
+  },
+  {
+    "tag": "Operators",
+    "patterns": [
+      "What is Unary Operator?"
+    ],
+    "response": [
+      "It requires only one operand. It is used to perform various operations, i.e: incrementing/decrementing a value by one, negating an expression, and inverting the value of a boolean <br>public class OperatorExample{  <br> public static void main(String args[]){  <br> int x=10; <br> System.out.println(x++);<br>System.out.println(++x);<br>System.out.println(x--);<br>System.out.println(--x);<br>} <br> } "
+    ]
+  },
+  {
+    "tag": "Operators",
+    "patterns": [
+      "What is Arithmetic Operator?"
+    ],
+    "response": [
+      "It is used to perform addition, subtraction, multiplication, and division. They act as basic mathematical operations.<br>public class OperatorExample{  <br>public static void main(String args[]){  <br>int a=10;  <br>int b=5;  <br>System.out.println(a+b);<br>System.out.println(a-b);<br>System.out.println(a*b);<br>System.out.println(a/b);<br>System.out.println(a%b);<br>} }"
+    ]
+  },
+  {
+    "tag": "Operators",
+    "patterns": [
+      "What is Left shift Operator?"
+    ],
+    "response": [
+      "It is used to shift all of the bits in a value to the left side a specified number of times. <br> public class OperatorExample{ <br>public static void main(String args[]){ <br>System.out.println(10<<2);<br>System.out.println(10<<3);<br>System.out.println(20<<2);<br>System.out.println(15<<4);<br>}}"
+    ]
+  },
+  {
+    "tag": "Operators",
+    "patterns": [
+      "What is Right shift Operator?"
+    ],
+    "response": [
+      "It is used to move the value of the left operand to the right by the number of bits specified by the right operand. <br>public OperatorExample{ <br>public static void main(String args[]){  <br>System.out.println(10>>2);<br>System.out.println(20>>2);<br>System.out.println(20>>3);<br>}}"
+    ]
+  },
+  {
+    "tag": "Operators",
+    "patterns": [
+      "What is Ternary Operator?"
+    ],
+    "response": [
+      "It is a conditional operator that evaluates a boolean expression and returns one value if the expression is true, and another value if the expression is false.<br> public class OperatorExample{  <br>public static void main(String args[]){<br>int a=2;<br>int b=5;  <br>int min=(a<b)?a:b; <br>System.out.println(min);  <br>}}"
+    ]
+  },
+  {
+    "tag": "Operators",
+    "patterns": [
+      "What is Assignment Operator?"
+    ],
+    "response": [
+      "It is one of the most common operators. It is used to assign the value on its right to the operand on its left. <br> public class OperatorExample{  <br>public static void main(String args[]){  <br>int a=10; <br>int b=20; <br>a+=4;<br>b-=4;<br>System.out.println(a)<br>System.out.println(b)<br>}}"
+    ]
+  },
+  {
+    "tag": "Operators",
+    "patterns": [
+      "What is Relational Operator?"
+    ],
+    "response": [
+      "Relational operators are used to establish a relationship between two entities. They return either true or false based on the relationship between the operands.<br>public class OperatorExample{ <br>public static void main(String args[]) {<br>int a = 10;<br>int a = 20;<br>System.out.println(a == b =  + (a == b) );<br> System.out.println(a != b =  + (a != b) );<br>}}"
+    ]
+  },{
+  "tag": "Variables",
+  "patterns": [
+    "What is mean by variables?",
+    "Define variables"
+  ],
+  "response": [
+    "Variable is a named memory block which is used to store the data."
+  ]
+},
+  {
+    "tag": "Print statements",
+    "patterns": [
+      "Define print statement",
+      "Define println statement"
+    ],
+    "response": [
+      "Println statement is used to print statement on new line <br> Print statement is used to print statement on the same line"
+
+    ]
+  },
+  {
+    "tag": "Tokens",
+    "patterns": [
+      "What is mean by tokens?",
+      "Define tokens",
+      "Explain about tokens and its types"
+    ],
+    "response": [
+      "Tokens are the basic units of java programming language. <br> Tokens are of 5 types <br> 1.Keywords <br> 2.Identifiers <br> 3.Separators <br> 4.Literals <br> 5.Operators"
+    ]
+  },
+  {
+    "tag": "Keywords",
+    "patterns": [
+      "What is mean by Keywords?",
+      "Define Keywords",
+      "What are the examples of keywords?",
+      "What is the another name for keyword?"
+    ],
+    "response": [
+      "Keywords are the pre-defined words which is used perform some specific task <br> Keywords are also called as reserved words <br> There are 49+ keywords in java <br> Eg: <br> public, private, static, int, byte, short, float, etc."
+
+    ]
+  },
+  {
+    "tag": "Identifiers",
+    "patterns": [
+      "What is mean by Identifier?",
+      "Define Identifiers in java",
+      "What are the rules for naming the identifier?"
+    ],
+    "response": [
+      "A Java identifier is a name given to a package, class, interface, method, or variable. <br> Rules of naming identifiers: <br> 1.They begin with an alphabetic character or an underscore (_) <br>2.You cannot use keywords like int , while etc. as identifiers. <br> 3. Space is not allowed in between the identifier."
+    ]
+  },
+  {
+    "tag": "Separators",
+    "patterns": [
+      "What is mean by separators",
+      "Define separators",
+      "What are the separators available in java",
+      "Separators and its uses"
+    ],
+    "response": [
+      " Separators help us defining the structure of a program. In Java, There are few characters used as separators. The most commonly used separator in java is a semicolon(;) <br>() -used to contain a list of parameters in method definition and invocation. also used for defining precedence in expressions in control statements and surrounding cast types  <br> {} -Used to define a block of code, for classes, methods and local scopes Used to contain the value of automatically initialised array <br>[] -declares array types and also used when dereferencing array values <br>; -Terminates statements <br>, -Used to separates package names from sub-package and class names and also selects a field or method from an object <br>. - Used to separates package names from sub-package and class names and also selects a field or method from an object"
+    ]
+  },
+  {
+    "tag": "Literals",
+    "patterns": [
+      "What is mean by literal?",
+      "Define literals."
+    ],
+    "response": [
+      "Any constant value which can be assigned to the variable is called literal/constant."
+
+    ]
+  },
+  {
+    "tag": "Oops",
+    "patterns": [
+      "What are the concepts of Oops?",
+      "Define Instantiation",
+      "What is mean by object",
+      "How to call the constructor?"
+    ],
+    "response": [
+      "Oops-Object-oriented programming system <br> Object means a real-world entity such as a pen, chair, table, computer, watch, etc. Object-Oriented Programming is a methodology or paradigm to design a program using classes and objects. It simplifies software development and maintenance by providing some concepts: <br> 1.Encapsulation <br> 2.Inheritance <br> 3.Polymorphism <br> 4.Abstraction <br> Instantiation: <br> The process of creating an object is called as instantiation. The object is created with the help of new keyword i.e., a call to a constructor. The name of the constructor provides the name of the class to instantiate."
+    ]
+  },
+  {
+    "tag": "Encapsulation",
+    "patterns": [
+      "Explain about encapsulation",
+      "Define encapsulation",
+      "what are the advantages of encapsulation",
+      "What is mean by encapsulation",
+      "Explain encapsulation with example",
+      "Write one example for encapsulation"
+    ],
+    "response": [
+      "Encapsulation in Java is a fundamental concept in object-oriented programming (OOP) that refers to the bundling of data and methods that operate on that data within a single unit, which is called a class in Java. Java Encapsulation is a way of hiding the implementation details of a class from outside access and only exposing a public interface that can be used to interact with the class. <br>In Java, encapsulation is achieved by declaring the instance variables of a class as private, which means they can only be accessed within the class. To allow outside access to the instance variables, public methods called getters and setters are defined, which are used to retrieve and modify the values of the instance variables, respectively. By using getters and setters, the class can enforce its own data validation rules and ensure that its internal state remains consistent. <br>The advantage of encapsulation is data hiding, reusability etc. The datas hidden can be accessed with the help of getters and setters method.<br>Eg:<br>public class Student{ <br> private String name; <br> public String getName(){ <br> return name; <br> } <br> public void setName(String name){ <br> this.name=name; <br> } <br>}<br>class Test{ <br>public static void main(String[] args){<br>Student s=new Student();<br>s.setName(","Vijay",");<br>System.out.println(s.getName());<br> }<br>}"
+    ]
+  },
+  {
+    "tag": "Inheritance",
+    "patterns": [
+      "Define inheritance",
+      "Explain about inheritance",
+      "Explain inheritance with an example",
+      "What is Inheritance"
+    ],
+    "response": [
+      "The process of acquiring the states and behaviours of one class into another class is called as Inheritance <br> We can achieve inheritance with the help of two keywords, extends and implements <br> Eg: <br> public class Student{ <br> private String name=","Vijay","; <br> public String m1{ <br> return ","Pooja"," <br> }<br> }<br> }<br> class Test extends Student{ <br>public static void main(String[] args){ <br>System.out.println(name); <br>System.out.println(m1()); <br>} <br>} <br>"
+
+    ]
+  },
+  {
+    "tag": "Types of Inheritance",
+    "patterns": [
+      "What are the types of inheritance?",
+      "Define single level inheritance",
+      "Explain about single level inheritance",
+      "Define multi level inheritance",
+      "Explain about multi level inheritance",
+      "Define multiple inheritance",
+      "Explain about multiple inheritance",
+      "Define hierarchical inheritance",
+      "Explain about hierarchical inheritance",
+      "Define hybrid inheritance",
+      "Explain about hybrid inheritance"
+    ],
+    "response": [
+      "Types of inheritance: <br> 1.Single level inheritance <br> Inheritance of only one level is called as single level inheritance <br>2.Multi level inheritance <br>When there is a chain of inheritance, it is known as multilevel inheritance <br>3.Multiple inheritance <br>When one class inherits multiple classes, it is known as multiple inheritance <br>4.Hierarchical inheritance <br>The inheritance in which a single base class inherits multiple derived classes is known as the Hierarchical Inheritance <br>5.Hybrid inheritance <br>The combination of multiple and hierarchical inheritance iis called hybrid inheritance"
+    ]
+  },
+  {
+    "tag": "Polymorphism",
+    "patterns": [
+      "Polymorphism",
+      "Define polymorphism",
+      "What is mean by polymorphism?",
+      "Explain polymorphism with example",
+      "What are the types of polymorphism",
+      "Define compile time polymorphism",
+      "Define run time polymorphism",
+      "Explain compile time polymorphism with example",
+      "Explain run time polymorphism with example",
+      "Define method overloading",
+      "Define method overriding",
+      "What are all the rules for method overriding"
+    ],
+    "response": [
+      "Polymorphism allows us to perform a single action in different ways. In other words, polymorphism allows you to define one interface and have multiple implementations. The word “poly” means many and “morphs” means forms, So it means many forms.<br> Types of polymorphism: <br>1.Compile time polymorphism <br>It is also known as static polymorphism. This type of polymorphism is achieved by function overloading or operator overloading. <br>Method overloading <br>When there are multiple functions with the same name but different parameters then these functions are said to be overloaded <br>Eg: <br>class A1 { <br>static int add(int a, int b) <br> { <br>return a + b; <br>} <br>static double add(double a, double b) <br>{ <br>return a + b; <br>} <br>} <br>class Main{ <br>public static void main(String[] args) <br>{ <br>System.out.println(A1.add(2, 4));   <br>System.out.println(A1.add(5.5, 6.3));  <br>} <br>} <br>2. Run time polymorphism <br>In runtime polymorphism, the compiler resolves the object at run time and then it decides which function call should be associated with that object. <br>Method overriding: <br>Method overriding occurs when a subclass provides a particular implementation of a method declared by one of its parent classes. <br>Eg: <br>class Vehicle{ <br>void run(){ <br>System.out.println(","Vehicle is running","); <br>} <br>} <br>class Bike extends Vehicle{ <br>public static void main(String args[]){ <br>Bike obj = new Bike(); <br>obj.run(); <br>} <br>} <br>Rules for method overriding <br>1.The method must have the same name as in the parent class <br>2.The method must have the same parameter as in the parent class. <br>3.There must be an IS-A relationship (inheritance)."
+    ]
+  },
+  {
+    "tag": "Abstraction",
+    "patterns": [
+      "Define Abstraction",
+      "What is mean by Abstraction?",
+      "Explain Abstraction with example",
+      "How can we achieve Abstraction",
+      "Define Abstract class",
+      "Define Abstract method",
+      "Explain interface with example",
+      "Explain abstract class with example"
+    ],
+    "response": [
+      "Abstraction in Java refers to hiding the implementation details of a code and exposing only the necessary information to the user. <br>We can achieve abstraction in two ways:<br>1.Abstract class <br>A class which is declared as abstract is known as an abstract class. It can have abstract and non-abstract methods. It needs to be extended and its method implemented. It cannot be instantiated. <br>Abstract method: <br>A method which is declared as abstract and does not have implementation is known as an abstract method. <br>Eg: <br>abstract class Bike{ <br>abstract void run(); <br>} <br>class Yamaha extends Bike{ <br>void run(){ <br>System.out.println(",
+      "running safely",
+      "); <br>} <br>public static void main(String args[]){ <br>Bike obj = new Yamaha(); <br>obj.run(); <br>} <br>} <br>2.Interface <br>Interface is a component in java which is used to achieve 100% abstraction. <br>Eg: <br>interface Int { <br>final int a = 10; <br>void display(); <br>} <br>class Main implements Int { <br>public void display(){ <br>System.out.println(",
+      "Geek); <br>} <br>public static void main(String[] args) <br>{ <br>Main m = new Main(); <br>m.display(); <br>System.out.println(a); <br>} <br>}"
+    ]
+  },
+  {
+    "tag": "Java",
+    "patterns": [
+      "What is Java"
+    ],
+    "response": [
+      "Java is a popular programming language, created in 1995.It is owned by Oracle, and more than 3 billion devices run Java.It is use for <br> Mobile applications (specially Android apps) <br>    Desktop applications <br>    Web applications <br>  Web servers and application servers <br>    Games <br>    Database connection <br>    And much, much more!<br>"
+    ]
+  },
+  {
+    "tag": "Uses of Java",
+    "patterns": [
+      "why use Java"
+    ],
+    "response": [
+      "Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)<br>    It is one of the most popular programming languages in the world<br>    It has a large demand in the current job market<br> "
+
+    ]
+  },
+  {
+    "tag": "Features of Java",
+    "patterns": [
+      "Features of Java"
+    ],
+    "response": [
+      "Simple and Easy to Learn.<br> Object-Oriented Programming.<br>  Platform Independence.<br> Automatic Memory Management.<br> Security.<br>  Rich API.<br>  Multithreading.<br>  High Performance.JDK is an implementation of any one of the below given Java Platforms released by Oracle corporation:<br><br>  Standard Edition Java Platform<br>  Enterprise Edition Java Platform<br> Micro Edition Java Platform<br>"
+    ]
+  },
+  {
+    "tag": "JDK",
+    "patterns": [
+      "What is JDK"
+    ],
+    "response": [
+      "The Java Development Kit (JDK) is a software development environment which is used to develop java applications and applets. It physically exists. It contains JRE + development tools."
+
+    ]
+  },
+  {
+    "tag": "JVM",
+    "patterns": [
+      "What is JVM"
+    ],
+    "response": [
+      "JVM (Java Virtual Machine) is an abstract machine. It is called a virtual machine because it doesn't physically exist. It is a specification that provides a runtime environment in which Java bytecode can be executed. It can also run those programs which are written in other languages and compiled to Java bytecode.<br><br>JVMs are available for many hardware and software platforms. JVM, JRE, and JDK are platform dependent because the configuration of each OS is different from each other. However, Java is platform independent. There are three notions of the JVM: specification, implementation, and instance.The JVM performs the following main tasks:<br><br> Loads code<br> Verifies code<br>  Executes code<br> Provides runtime environment<br>"
+
+    ]
+  },
+  {
+    "tag": "JRE",
+    "patterns": [
+      "What is JRE"
+    ],
+    "response": [
+      "JRE is an acronym for Java Runtime Environment. It is also written as Java RTE. The Java Runtime Environment is a set of software tools which are used for developing Java applications. It is used to provide the runtime environment. It is the implementation of JVM. It physically exists. It contains a set of libraries + other files that JVM uses at runtime."
+
+    ]
+  },
+  {
+    "tag": "Intern Topics",
+    "patterns": [
+      "What should i learn in Intern",
+      "Intern Topics",
+      "learn in Intern",
+      "learn in intern",
+      "java intern",
+      "Java intern",
+      "Java Intern"
+    ],
+    "response": [
+      "Yould should learn: <br> Introduction - Core Java <br> Advanced Java<br>Variables<br>primitive datatypes<br>wrapper class<br>string operators<br>OOPS concepts, Arrays, Exception Handling, Threading<br>Controll Statements : loops ->switch, for ,while, do while<br>Java IO Streams<br>Java Generics<br>JDBC Connectivity<br>Junit<br>Java New Features (8 -17)<br>Start With Spring Framework<br>Maven Setup and build<br>JPA and Hibernate<br>Rest API with Spring Boot<br>SQL Introduction - Basics SQL syntax"
+    ]
+  }
+]

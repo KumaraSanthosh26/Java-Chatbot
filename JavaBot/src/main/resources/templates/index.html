@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot</title>
+    <style>
+        h1 {
+            background-color: rgba(0, 0, 0, 0.83);
+            color: white;
+            margin-top: 0;
+        }
+
+        body {
+            background-size: 100%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .abc {
+            background-color: lightgoldenrodyellow
+        }
+
+        .chat-bot {
+            display: none;
+            position: fixed;
+            bottom: 150px;
+            right: 40px;
+            width: 330px;
+            overflow: hidden;
+            background-color: #f9f9f9;
+            border-radius: 15px;
+            box-shadow: 0 0 128px 0 rgba(18, 4, 4, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.5);
+            font-family: Arial, sans-serif;
+            overflow-y: scroll;
+            z-index: 999;
+            font-size: 12px;
+        }
+        p{
+            bottom: 160px;
+            display: flex;
+            position: fixed;
+            justify-content: center;
+            align-items: center;
+            right: 150px;
+            color: black;
+            font-weight: bold;
+            font-size: medium;
+            background-color: #e7f2fd;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .chatbot-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 60%;
+            position: fixed;
+            bottom: 100px;
+            right: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .chat-header {
+            background: rgba(21, 20, 16, 0.87);
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 1.4rem;
+        }
+
+        .chat-bot.show {
+            display: block;
+            height: 600px;
+            width: 600px;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 30px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            color: #f9f9f9;
+        }
+
+        .chat-container {
+            height: 900px;
+
+            border: 1px solid #ccc;
+            border-radius: 15px;
+        }
+
+        .chat-bot .chat-box {
+            height: 200px;
+            overflow-y: scroll;
+            padding: 0px 20px 70px;
+        }
+
+        .chat-body {
+            list-style-type: none;
+            padding: 8px 0px;
+            flex-grow: 1;
+            overflow-y: scroll;
+            border-radius: 0.9rem;
+        }
+
+        .message {
+            margin: 0px 0;
+            padding: 10px 12px;
+            border-radius: 8px;
+            max-width: 70%;
+            word-wrap: break-word;
+        }
+
+        .send {
+            border: none !important;
+        }
+
+        .send:focus-visible {
+            border: none !important;
+            outline: none;
+        }
+
+        .user-message {
+            background-color: #DCF8C6;
+            background-size: flex;
+            align-self: flex-start;
+            color: #000;
+            margin: 10px;
+        }
+
+        .bot-message {
+            background-color: #E6E6E6;
+            background-position: 0%;
+            align-self: flex-start;
+            margin: 10px;
+            color: #000;
+        }
+
+        .chat-footer {
+            display: flex;
+            margin-top: 100px;
+            align-items: center;
+            border-top: 1px solid #ccc;
+            padding: 8px 18px;
+        }
+
+        .chat-footer input {
+            flex-grow: 1;
+            padding: 34px;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        .chat-footer button {
+            padding: 16px 16px;
+            background-color: white;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .chat-footer button:hover {
+            background-color: #0065fd;
+        }
+    </style>
+</head>
+<body style="overflow: hidden;" >
+<h1 style="text-align: center;"> <br> <b> WELCOME TO JAVA CHAT BOT </b> <br><br></h1>
+<div style="overflow: hidden;" class="chat-bot" id="chat-bot">
+    <div class="close-button" onclick="toggleChat()">x</div>
+    <div class="chat-container">
+        <div class="chat-header">
+            <header>
+                <h2>Hi Chat with JAVA BOT</h2>
+            </header>
+        </div>
+        <ul class="chat-box">
+            <div class="chat-body" id="chat-body" style="overflow: hidden;">
+
+            </div>
+        </ul>
+        <div class="chat-footer">
+            <input type="text" class="send" id="user-message" placeholder="Type your message...">
+            <button onclick="sendMessage()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Cqpc0PQNUs7Bxn68Bee_OIBx38tvUp1DTg&usqp=CAU" style="width: 30px ;height: 30px;" alt="send message to JAVA BOT">
+            </button>
+        </div>
+    </div>
+</div>
+<p id = chat-text ></p><br>
+<div class="chatbot-icon" onclick="toggleChat()">
+    <img src="https://static-00.iconduck.com/assets.00/java-icon-2048x2048-yxty4s2p.png" style="width: 80px ;height: 80px;">
+</div>
+
+<script>
+    function typeText() {
+        var text = "Hi, I am JAVA BOT";
+        var i = 0;
+        var speed = 150;
+
+        function type() {
+            if (i < text.length) {
+                document.getElementById("chat-text").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(type, speed);
+            }
+        }
+        type();
+
+
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        typeText();
+    });
+    function toggleChat() {
+        var chatBot = document.getElementById('chat-bot');
+        chatBot.classList.toggle('show');
+        document.getElementById('user-message').focus();
+    }
+
+    function sendMessage() {
+        var userMessage = document.getElementById('user-message').value;
+        var chatBody = document.getElementById('chat-body');
+
+        var userMessageElement = document.createElement('div');
+        userMessageElement.className = 'message user-message';
+        userMessageElement.innerHTML = '<strong>User:</strong> ' + userMessage;
+        chatBody.appendChild(userMessageElement);
+
+        document.getElementById('user-message').value = '';
+
+        fetch('/chat/chatResponse', {
+            method: 'POST',
+            body: userMessage,
+            headers: {
+                'Content-Type': 'text/plain'
+            },
+        })
+            .then(response => response.text())
+            .then(data => {
+                var botMessage = document.createElement('div');
+                botMessage.className = 'message bot-message';
+                botMessage.innerHTML = '<strong>JAVA Bot:</strong> ' + data;
+                chatBody.appendChild(botMessage);
+
+                chatBody.scrollTop = chatBody.scrollHeight;
+                chatBody.scrollIntoView({ behavior: 'smooth', block: 'end' });
+            })
+            .catch(error => console.error('Error:', error));
+    }
+
+
+    document.getElementById('user-message').addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            sendMessage();
+        }
+    });
+</script>
+</body>
+</html>
